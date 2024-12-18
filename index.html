@@ -7,14 +7,21 @@
 </head>
 <body>
 
-
+   
     <img src="C:\Users\buğra\Desktop\github-6980894_960_720.webp" alt="git-hub" onclick="window.location.href= 'https://github.com/bugra123uysal';">
     <img src="C:\Users\buğra\Desktop\LinkedIn_logo_initials.png" alt="linkedın" onclick="window.location.href= 'https://www.linkedin.com/in/mesut-bu%C4%9Fra-uysal-16a1bb288/';">
     <img src="C:\Users\buğra\Desktop\illu_kaggle-43-1024x562.jpg" alt="kaggle" onclick= "window.location.href='https://www.kaggle.com/burauysal';">
-
-    <p >Merhaba ekonomi ve finans okuyon 3. ünüversite öğrencisiyim kendimi web , data science, finans alanında geliştirmeye çalışıyorum daha çok bu üçünü karıştrıp birşeyler ortaya çıkarmak istiyorum </p>
+    <p id="wach" ></p>
+    <p id="abo" >Merhaba ekonomi ve finans okuyon 3. ünüversite öğrencisiyim kendimi web , data science, finans alanında geliştirmeye çalışıyorum daha çok bu üçünü karıştrıp birşeyler ortaya çıkarmak istiyorum </p>
     
     <h1>projeler</h1>
+
+    <h1>iletişim</h1>
+    <input id="ma" type="email" placeholder="mail">
+    <input id="txt" type="text" placeholder="merhaba">
+    <button onclick="gnd">gönder</button>
+
+
 
 
     <style> 
@@ -24,25 +31,55 @@
             font-weight: bolder;
             
         }
+        img:hover{
+            position: absolute;
+            border: 1px , solid;
+            border-color: black;
+          
+            
+            
+        }
+       
 
       
-        p{
+        #abo{
             display: grid;
             place-items:center ;
         
         }
-       p:hover {
+       #abo:hover {
         text-decoration: underline;
-        zoom: 1.2;
+        zoom: 1.02;
 
         
 
         }
-        p:hover::after{
+        #abo:hover::after{
             text-decoration: none;
             zoom: 1;
         }
+
+        #wach{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+           
+            
+           
+           
+        }
     </style>
+
+    <script>
+
+        
+
+        saat=document.getElementById("wach").innerHTML=Date()
+
+
+
+
+    </script>
     
 </body>
 </html>
